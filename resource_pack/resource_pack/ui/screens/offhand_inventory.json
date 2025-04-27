@@ -1,0 +1,44 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:client_ui_screen": {
+    "description": {
+      "identifier": "offhand:inventory_form",
+      "version": [1, 0, 0]
+    },
+    "components": {
+      "background": {
+        "material": "textures/ui/slots_background"
+      },
+      "mainHandSlot": {
+        "type": "slot",
+        "position": { "x": 50, "y": 50 },
+        "size":     { "width": 18, "height": 18 },
+        "slot_id":  "mainHandSlot"
+      },
+      "offHandSlot": {
+        "type": "slot",
+        "position": { "x": 50, "y": 80 },
+        "size":     { "width": 18, "height": 18 },
+        "slot_id":  "offHandSlot"
+      },
+      "swapButton": {
+        "type": "button",
+        "text": "Trocar",
+        "position": { "x": 50, "y": 110 },
+        "on_click": {
+          "event": "offhand:swap_request",
+          "data": {
+            "mainHandSlot": "{mainHandSlot.index}",
+            "offHandSlot":  "{offHandSlot.index}"
+          }
+        }
+      },
+      "closeButton": {
+        "type": "button",
+        "text": "Fechar",
+        "position": { "x": 100, "y": 110 },
+        "on_click": { "action": "close_screen" }
+      }
+    }
+  }
+}
