@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Offhand RP",
+    "description": "UI para slot de segunda mão",
+    "uuid": "b56999e5-85ce-4647-b82a-8ff887a3ca5e",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "b63f503d-4d21-4e63-84f7-03b914b13d22",
+      "version": [1, 0, 0]
+    }
+  ]
+}
